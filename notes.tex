@@ -7,6 +7,8 @@
 \usepackage{hyperref}
 \usepackage{enumitem}
 
+\input{macros}
+
 \hypersetup{
   linkcolor={red},
   citecolor={green},
@@ -14,8 +16,12 @@
   colorlinks,
 }
 
+\newtheorem{theorem}{Theorem}[section]
+
 \theoremstyle{definition}
-\newtheorem{solution}{Solution}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem*{notation}{Notation}
+\newtheorem*{solution}{Solution}
 
 \title{Reading the Napkin}
 \author{Casper Guo}
@@ -31,5 +37,9 @@
 \setcounter{chapter}{-1}
 \chapter{Introduction}
 Why? Why not.
+
+Any reference to the book uses numbering as of version v1.6.20251109.
+
+\include{chapters/groups}
 
 \end{document}
